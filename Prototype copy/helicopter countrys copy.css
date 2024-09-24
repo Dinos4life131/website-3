@@ -1,0 +1,158 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background: rgba(27, 27, 27, 0.25); /* Semi-transparent background */
+    padding: 10px 50px; /* Reduced padding for a smaller header */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Position relative to make absolute centering easier */
+}
+
+.logo h1 {
+    font-size: 24px; /* Reduced font size */
+    color: #f7931e;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Reduced gap */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px; /* Reduced font size */
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f7931e;
+}
+
+/* Header Text */
+.header-text {
+    position: absolute; /* Absolute positioning to place it in the middle */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally using translate */
+    top: 50%; /* Adjust to the center of the header */
+    transform: translate(-50%, -50%); /* Ensure it is vertically centered */
+    color: #bbb;
+    font-size: 14px; /* Reduced font size */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.register-btn {
+    background-color: #e03a3a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* Grid styling for flags */
+.nations-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Adjust number of columns based on screen size */
+    gap: 20px;
+}
+
+.nation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nation img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.nation button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.nation button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}

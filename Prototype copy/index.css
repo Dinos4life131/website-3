@@ -1,0 +1,179 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: rgba(27, 27, 27, 0.25); /* Semi-transparent background */
+    padding: 10px 50px; /* Reduced padding for a smaller header */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Position relative to make absolute centering easier */
+}
+
+.logo h1 {
+    font-size: 24px; /* Reduced font size */
+    color: #f7931e;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Reduced gap */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px; /* Reduced font size */
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f7931e;
+}
+
+/* Header Text */
+.header-text {
+    position: absolute; /* Absolute positioning to place it in the middle */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally using translate */
+    top: 50%; /* Adjust to the center of the header */
+    transform: translate(-50%, -50%); /* Ensure it is vertically centered */
+    color: #bbb;
+    font-size: 14px; /* Reduced font size */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh; /* Full viewport height */
+    background-image: url('https://warthunder.com/i/opengraph-wt.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 0px; /* Adjusted margin to account for the fixed header */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Optional overlay for text contrast */
+}
+
+
+/* Navigation Section */
+.navigation {
+    background-color: #121212;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    max-width: 250px;
+    text-align: center;
+}
+
+.nav-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.nav-item h3 {
+    font-size: 24px;
+    color: #f7931e;
+    margin-bottom: 10px;
+}
+
+.nav-item p {
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f7931e;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Button Hover and Active Effects */
+.btn:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Footer */
+footer {
+    background-color: #0d0d0d;
+    text-align: center;
+    padding: 40px 0;
+    color: #bbb;
+    font-size: 14px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-text {
+        font-size: 12px;
+        transform: translateX(-50%);
+        top: auto;
+        bottom: 10px; /* Move to bottom of header on smaller screens */
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
