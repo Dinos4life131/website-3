@@ -7,14 +7,17 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
     color: #fff;
     text-align: center;
+    background-image: url('https://th.bing.com/th/id/R.9727fa988966cba6e506ae207ac4dcca?rik=t8tC5LLcEwkeJw&riu=http%3a%2f%2fwww.zastavki.com%2fpictures%2foriginals%2f2013%2fGames_War_Thunder_the_planes_and_tanks_051539_.jpg&ehk=l8ZbK2ahpdHAwHYzOR6UefHg%2bywLxw4W98wbpt37hTM%3d&risl=&pid=ImgRaw&r=0'); /* Set the new background image */
+    background-size: cover; /* Make the background cover the whole page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
 }
 
 /* Header Styles */
 header {
-    background: rgba(27, 27, 27, 0.25); /* Semi-transparent background */
+    background: rgba(27, 27, 27, 0.5); /* Semi-transparent background */
     padding: 10px 50px; /* Reduced padding for a smaller header */
     position: fixed;
     width: 100%;
@@ -67,36 +70,8 @@ nav ul li a:hover {
     white-space: nowrap; /* Prevent text wrapping */
 }
 
-.logo h1 {
-    font-size: 24px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-.register-btn {
-    background-color: #e03a3a;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-
 main {
-    padding: 40px 20px;
+    padding: 80px 20px; /* Adjust padding to avoid overlap with header */
 }
 
 h2 {
@@ -106,8 +81,7 @@ h2 {
 
 .vehicles-grid {
     display: grid;
-    /* Adjust number of columns (use 1 for full-width, 2 for side-by-side, 3 for compact) */
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr); /* Keep the layout as 2 columns */
     gap: 30px; /* Increase or decrease gap between grid items */
 }
 
@@ -119,7 +93,7 @@ h2 {
     position: relative;
     background-size: cover; /* Keep the image covering the whole block */
     background-position: center;
-    height: 300px; /* Increase the height to make the images larger */
+    height: 400px; /* Increased height for larger images */
     width: 100%; /* Set width to full, and it'll scale with the grid */
     display: flex;
     justify-content: center;
@@ -128,7 +102,6 @@ h2 {
 
 .aviation {
     background-image: url('https://warthunder.com/assets/img/jpg/widget-aviation.jpg'); /* Replace with your actual image */
-    height: 350px; /* You can give specific heights for each item if needed */
 }
 
 .helicopters {
@@ -147,9 +120,21 @@ h2 {
 .vehicle-item {
     background-size: cover; /* The image will cover the entire block */
     background-position: center; /* Center the image */
-    height: 350px; /* You can adjust height for specific items */
 }
 
+/* Add a background behind the text for better readability */
+.vehicle-item h3 {
+    position: absolute; /* Positioning the text absolutely within the item */
+    bottom: 20px; /* Distance from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centering the text */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Padding for better appearance */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 20px; /* Font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional text shadow for clarity */
+}
 
 footer {
     background-color: rgba(0, 0, 0, 0.7);
@@ -164,3 +149,5 @@ footer .social-links a {
     text-decoration: none;
     font-weight: bold;
 }
+
+
