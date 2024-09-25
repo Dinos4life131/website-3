@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Thunder Nations</title>
+    <link rel="stylesheet" href="helicopter countrys copy.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.ytimg.com/vi/rCcIGYo8XbM/maxresdefault.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 50px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            color: #f7931e;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #f7931e;
+        }
+
+        /* Header Text */
+        .header-text {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: #bbb;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        main {
+            padding: 100px 20px;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        /* Grid styling for flags */
+        .nations-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .nation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nation img {
+            width: 500px;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease; /* Smooth scaling effect */
+        }
+
+        .nation button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s ease; /* Smooth scaling effect */
+        }
+
+        /* Scale up on hover */
+        .nation img:hover {
+            transform: scale(1.1); /* Scale image on hover */
+        }
+
+        .nation button:hover {
+            transform: scale(1.1); /* Scale button on hover */
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        footer .footer-text {
+            color: #fff;
+            font-size: 14px;
+        }
+
+        footer .footer-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>War Thunder Helper</h1>
+            </div>
+            
+            <!-- Centered Header Text -->
+            <div class="header-text">
+                <p>Everything you need to dominate War Thunder — vehicle stats, maps, strategies, and more.</p>
+            </div>
+
+            <!-- Translate Button and Navigation moved to the right -->
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="veichales.html">Vehicles</a></li>
+                        <li><a href="Guides.html">Tutorials</a></li>
+                        <li><a href="maps.html">Maps</a></li>
+                        <li><a href="Community.html">Community</a></li>
+                    </ul>
+                </nav>
+                <a href="translated_page/index.html" class="translate-btn">Translate to Māori</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <h2>Select a Nation</h2>
+        <div class="nations-grid">
+            <div class="nation">
+                <a href="#usa"><img src="https://wiki.warthunder.com/images/thumb/9/9f/USA_flag.png/130px-USA_flag.png" alt="USA flag"></a>
+                <a href="#usa"><button>USA</button></a>
+            </div>
+            <div class="nation">
+                <a href="#germany"><img src="https://wiki.warthunder.com/images/thumb/4/49/Germany_flag.png/130px-Germany_flag.png" alt="Germany flag"></a>
+                <a href="#germany"><button>Germany</button></a>
+            </div>
+            <div class="nation">
+                <a href="#ussr"><img src="https://wiki.warthunder.com/images/thumb/f/f9/USSR_flag.png/130px-USSR_flag.png" alt="USSR flag"></a>
+                <a href="#ussr"><button>USSR</button></a>
+            </div>
+            <div class="nation">
+                <a href="#britain"><img src="https://wiki.warthunder.com/images/thumb/d/d0/Britain_flag.png/130px-Britain_flag.png" alt="Great Britain flag"></a>
+                <a href="#britain"><button>Great Britain</button></a>
+            </div>
+            <div class="nation">
+                <a href="#japan"><img src="https://wiki.warthunder.com/images/thumb/2/2e/Japan_flag.png/130px-Japan_flag.png" alt="Japan flag"></a>
+                <a href="#japan"><button>Japan</button></a>
+            </div>
+            <div class="nation">
+                <a href="#china"><img src="https://wiki.warthunder.com/images/thumb/a/ac/China_flag.png/130px-China_flag.png" alt="China flag"></a>
+                <a href="#china"><button>China</button></a>
+            </div>
+            <div class="nation">
+                <a href="#italy"><img src="https://wiki.warthunder.com/images/thumb/e/e9/Italy_flag.png/130px-Italy_flag.png" alt="Italy flag"></a>
+                <a href="#italy"><button>Italy</button></a>
+            </div>
+            <div class="nation">
+                <a href="#france"><img src="https://wiki.warthunder.com/images/thumb/7/73/France_flag.png/130px-France_flag.png" alt="France flag"></a>
+                <a href="#france"><button>France</button></a>
+            </div>
+            <div class="nation">
+                <a href="#sweden"><img src="https://wiki.warthunder.com/images/thumb/c/ca/Sweden_flag.png/130px-Sweden_flag.png" alt="Sweden flag"></a>
+                <a href="#sweden"><button>Sweden</button></a>
+            </div>
+            <div class="nation">
+                <a href="#israel"><img src="https://wiki.warthunder.com/images/thumb/f/f9/Israel_flag.png/130px-Israel_flag.png" alt="Israel flag"></a>
+                <a href="#israel"><button>Israel</button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-text">
+                War Thunder © All rights reserved
+            </div>
+            <div class="footer-text">
+                War Thunder Helper © All rights reserved
+            </div>
+            <div class="footer-text">
+                Contact us: <a href="mailto:warthunderhelper@hotmail.com">warthunderhelper@hotmail.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
