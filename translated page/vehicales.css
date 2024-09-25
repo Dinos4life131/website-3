@@ -1,0 +1,119 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.register-btn {
+    background-color: #e03a3a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.vehicles-grid {
+    display: grid;
+    /* Adjust number of columns (use 1 for full-width, 2 for side-by-side, 3 for compact) */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; /* Increase or decrease gap between grid items */
+}
+
+/* Adjust the size of the grid items (each vehicle block) */
+.vehicle-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    background-size: cover; /* Keep the image covering the whole block */
+    background-position: center;
+    height: 300px; /* Increase the height to make the images larger */
+    width: 100%; /* Set width to full, and it'll scale with the grid */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aviation {
+    background-image: url('https://warthunder.com/assets/img/jpg/widget-aviation.jpg'); /* Replace with your actual image */
+    height: 350px; /* You can give specific heights for each item if needed */
+}
+
+.helicopters {
+    background-image: url('https://warthunder.com/assets/img/jpg/widget-helicopters.jpg');
+}
+
+.ground {
+    background-image: url('https://warthunder.com/assets/img/jpg/widget-tanks.jpg');
+}
+
+.naval {
+    background-image: url('https://warthunder.com/assets/img/jpg/widget-fleet.jpg');
+}
+
+/* Optional: Ensure that the images cover the block while maintaining proportions */
+.vehicle-item {
+    background-size: cover; /* The image will cover the entire block */
+    background-position: center; /* Center the image */
+    height: 350px; /* You can adjust height for specific items */
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
