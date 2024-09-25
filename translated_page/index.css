@@ -1,0 +1,190 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: rgba(27, 27, 27, 0.25);
+    padding: 10px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #f7931e;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Centering the header text between the logo and nav */
+.header-text {
+    text-align: center;
+    margin: 0 auto; /* Centers the text between the logo and navigation */
+    flex-grow: 1; /* Takes up available space */
+    color: #bbb;
+    font-size: 14px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f7931e;
+}
+
+/* Translate Button Styles */
+.translate-btn {
+    padding: 10px 20px;
+    background-color: #f7931e;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.translate-btn:hover {
+    background-color: #ffffff;
+}
+
+.translate-btn:active {
+    transform: scale(0.95);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('https://warthunder.com/i/opengraph-wt.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 0px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Navigation Section */
+.navigation {
+    background-color: #121212;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    max-width: 250px;
+    text-align: center;
+}
+
+.nav-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.nav-item h3 {
+    font-size: 24px;
+    color: #f7931e;
+    margin-bottom: 10px;
+}
+
+.nav-item p {
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f7931e;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .footer-text {
+    color: #fff;
+    font-size: 14px;
+}
+
+footer .footer-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,199 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    background-image: url('https://th.bing.com/th/id/R.9727fa988966cba6e506ae207ac4dcca?rik=t8tC5LLcEwkeJw&riu=http%3a%2f%2fwww.zastavki.com%2fpictures%2foriginals%2f2013%2fGames_War_Thunder_the_planes_and_tanks_051539_.jpg&ehk=l8ZbK2ahpdHAwHYzOR6UefHg%2bywLxw4W98wbpt37hTM%3d&risl=&pid=ImgRaw&r=0'); /* Set the new background image */
+    background-size: cover; /* Make the background cover the whole page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+}
+
+/* Header Styles */
+header {
+    background: rgba(27, 27, 27, 0.5);
+    padding: 10px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #f7931e;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Centering the header text between the logo and nav */
+.header-text {
+    text-align: center;
+    margin: 0 auto; /* Centers the text between the logo and navigation */
+    flex-grow: 1; /* Takes up available space */
+    color: #bbb;
+    font-size: 14px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f7931e;
+}
+
+/* Translate Button Styles */
+.translate-btn {
+    padding: 10px 20px;
+    background-color: #f7931e;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.translate-btn:hover {
+    background-color: #ffffff;
+}
+
+.translate-btn:active {
+    transform: scale(0.95);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('https://warthunder.com/i/opengraph-wt.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 0px;
+}
+
+main {
+    padding: 80px 20px; /* Adjust padding to avoid overlap with header */
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.vehicles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Keep the layout as 2 columns */
+    gap: 30px; /* Increase or decrease gap between grid items */
+}
+
+/* Adjust the size of the grid items (each vehicle block) */
+.vehicle-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    background-size: cover; /* Keep the image covering the whole block */
+    background-position: center;
+    height: 400px; /* Increased height for larger images */
+    width: 100%; /* Set width to full, and it'll scale with the grid */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out; /* Smooth scaling effect and border transition */
+    border: 2px solid transparent; /* Default border */
+}
+
+/* Hover effect to enlarge the block and change border */
+.vehicle-item:hover {
+    transform: scale(1.05); /* Enlarge the block on hover */
+    border: 2px solid #c40b0b; /* Change border color on hover */
+}
+
+/* Individual background images for each vehicle type */
+.aviation {
+    background-image: url('https://warthunder.com/assets/img/jpg/widget-aviation.jpg'); 
+}
+
+.helicopters {
+    background-image: url('https://warthunder.com/assets/img/jpg/widget-helicopters.jpg');
+}
+
+.ground {
+    background-image: url('https://warthunder.com/assets/img/jpg/widget-tanks.jpg');
+}
+
+.naval {
+    background-image: url('https://warthunder.com/assets/img/jpg/widget-fleet.jpg');
+}
+
+/* Add a background behind the text for better readability */
+.vehicle-item h3 {
+    position: absolute; /* Positioning the text absolutely within the item */
+    bottom: 20px; /* Distance from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centering the text */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Padding for better appearance */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 20px; /* Font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional text shadow for clarity */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .footer-text {
+    color: #fff;
+    font-size: 14px;
+}
+
+footer .footer-container {
+    display: flex;
+    gap: 20px; /* Adjust this value for the desired space between elements */
+    flex-wrap: wrap; /* Ensure it wraps nicely on smaller screens */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}

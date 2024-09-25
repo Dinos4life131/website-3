@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('https://th.bing.com/th/id/R.5262bb0788bed6aecfb5dd8207dc4a84?rik=Rzurh9hvpsToWQ&pid=ImgRaw&r=0'); /* Set the new background image */
+    background-size: cover; /* Make the background cover the whole page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    background: rgba(27, 27, 27, 0.25);
+    padding: 10px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #f7931e;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Centering the header text between the logo and nav */
+.header-text {
+    text-align: center;
+    margin: 0 auto; /* Centers the text between the logo and navigation */
+    flex-grow: 1; /* Takes up available space */
+    color: #bbb;
+    font-size: 14px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f7931e;
+}
+
+/* Translate Button Styles */
+.translate-btn {
+    padding: 10px 20px;
+    background-color: #f7931e;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.translate-btn:hover {
+    background-color: #ffffff;
+}
+
+.translate-btn:active {
+    transform: scale(0.95);
+}
+.tutorials {
+    text-align: center;
+    padding: 80px 20px 50px; /* Increased top padding to avoid overlap with header */
+}
+
+.tutorials h2 {
+    font-size: 40px; /* Title font size */
+    margin-bottom: 30px; /* Space below title */
+}
+
+.tutorial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for tutorials */
+    gap: 20px; /* Gap between tutorials */
+    max-width: 1200px; /* Max width for tutorial grid */
+    margin: 0 auto; /* Center the grid */
+}
+
+.tutorial {
+    background-color: #282828; /* Background for each tutorial */
+    padding: 20px; /* Padding inside tutorial boxes */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Transition for hover effect */
+    text-align: center;
+}
+
+.tutorial:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+.tutorial img {
+    width: 100%; /* Full width for tutorial images */
+    border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 15px; /* Space below images */
+}
+
+.tutorial h3 {
+    font-size: 24px; /* Title size for tutorials */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.tutorial a {
+    display: inline-block; /* Make links block elements */
+    background-color: #d21f1f; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Padding for buttons */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.tutorial a:hover {
+    background-color: #f44336; /* Hover color for buttons */
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .footer-text {
+    color: #fff;
+    font-size: 14px;
+}
+
+footer .footer-container {
+    display: flex;
+    gap: 20px; /* Adjust this value for the desired space between elements */
+    flex-wrap: wrap; /* Ensure it wraps nicely on smaller screens */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
